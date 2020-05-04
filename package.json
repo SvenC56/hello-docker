@@ -1,0 +1,58 @@
+{
+  "name": "hello-docker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "docker": "docker build . -t app && docker run -d -p 8080:8080 app",
+    "prettier": "prettier --config .prettierrc --write ./src/**/*.vue ./**/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SvenC56/teamspeak-channelcreator.git"
+  },
+  "author": "Sven Cieslok <mail@svencieslok.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SvenC56/teamspeak-channelcreator/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier"
+    }
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint"
+  },
+  "homepage": "https://github.com/SvenC56/teamspeak-channelcreator#readme",
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "minify-css-string": "^1.0.0",
+    "vue": "^2.6.11",
+    "vuetify": "^2.2.17"
+  },
+  "devDependencies": {
+    "@mdi/font": "^5.1.45",
+    "@vue/cli-plugin-babel": "^4.2.3",
+    "@vue/cli-plugin-eslint": "^4.2.3",
+    "@vue/cli-service": "^4.2.3",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "eslint-teamcity": "^3.0.1",
+    "husky": "^4.2.3",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-docker": "^0.2.2",
+    "vue-cli-plugin-vuetify": "^2.0.5",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.4.3"
+  }
+}
