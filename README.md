@@ -8,6 +8,19 @@ You can simply pull the provided docker image.
 
 [svenc56/hello-docker](https://hub.docker.com/r/svenc56/hello-docker)
 
+
+#### Docker Build
+
+```bash
+docker build -t svenc56/hello-docker .
+```
+
+#### Docker Run
+
+```bash
+docker run --rm -it  -p 8080:80/tcp --name hello-docker svenc56/hello-docker:latest
+```
+
 ### Installing
 
 1.) Install dependencies:
@@ -34,12 +47,6 @@ $ yarn test
 $ yarn build
 
 $ yarn serve
-```
-
-_or_
-
-```bash
-$ yarn start
 ```
 
 ## Built With
