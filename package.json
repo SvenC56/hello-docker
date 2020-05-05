@@ -18,11 +18,6 @@
   "bugs": {
     "url": "https://github.com/SvenC56/teamspeak-channelcreator/issues"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prettier"
-    }
-  },
   "lint-staged": {
     "*.{js,vue}": "eslint"
   },
@@ -46,7 +41,6 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.2.2",
     "eslint-teamcity": "^3.0.1",
-    "husky": "^4.2.3",
     "prettier": "^2.0.5",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
