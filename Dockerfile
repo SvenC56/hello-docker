@@ -21,4 +21,4 @@ FROM nginx:alpine
 LABEL maintainer="SvenC56 <https://github.com/SvenC56>"
 COPY --from=frontend /home/node/app/dist /usr/share/nginx/html
 EXPOSE 80
-CMD ["nginx", "-g", "deamon off;"]
+CMD ["nginx", "-g", "daemon off;"]
