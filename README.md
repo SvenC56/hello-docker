@@ -1,5 +1,7 @@
 # Hello Docker
 
+[![Build Status](https://drone.sc-web.de/api/badges/SvenC56/hello-docker/status.svg)](https://drone.sc-web.de/SvenC56/hello-docker)
+
 ## Getting started
 
 ### Docker
